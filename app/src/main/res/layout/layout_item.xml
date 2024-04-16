@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:padding="0dp"
+    android:weightSum="10"
+    android:background="#FFFFFF"
+
+    >
+
+    <!-- Image Layout -->
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:layout_margin="0dp"
+        >
+
+        <!--Image-->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:scaleType="fitXY"
+            />
+
+        <!--Mask-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/image_mask"
+            android:scaleType="fitXY"
+            />
+
+        <TextView
+            android:id="@+id/textFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="도"
+            android:textSize="50dp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            />
+    </FrameLayout>
+
+    <!-- Right Layout-->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="8"
+        android:orientation="vertical"
+        android:weightSum="2"
+        >
+
+        <!--Top Layout-->
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Friend's Name"
+            android:textColor="#000000"
+            android:textSize="22dp"
+            android:gravity="left|center"
+            android:padding="5dp"
+            />
+
+        <!-- Message -->
+        <TextView
+            android:id="@+id/textViewMessage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Recent Message"
+            android:textSize="18dp"
+            android:textColor="#666666"
+            android:gravity="left|center"
+            android:padding="5dp"
+            />
+    </LinearLayout>
+</LinearLayout>
